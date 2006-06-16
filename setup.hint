@@ -1,0 +1,10 @@
+category: X11
+requires: cygwin crypt gtk2-x11-runtime libglade2 libjpeg62 xorg-x11-bin-dlls
+sdesc: "Screensaver for X11"
+ldesc: "The xscreensaver program waits until the keyboard and mouse 
+have been idle for a period, and then runs a graphics demo chosen at 
+random. It turns off as soon as there is any mouse or keyboard activity. 
+It can also lock the screen (immediately, after a longer idle period, 
+or on demand.) xscreensaver consists of two parts: xscreensaver itself 
+(the `driver' or `daemon'), which detects idleness and does locking; 
+and the many graphics demos that are launched by xscreensaver."
