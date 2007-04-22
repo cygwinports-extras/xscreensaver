@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin crypt gdk-pixbuf2 gtk2-x11 libGL1 libGLU1 libX11_6 libXext6 libXmu6 libXrandr2 libXt6 libglade2 libjpeg62
+requires: cygwin crypt gdk-pixbuf2 glib2 gtk2-x11 libGL1 libGLU1 libX11_6 libXext6 libXmu6 libXrandr2 libXt6 libglade2 libintl8 libjpeg62 libxml2 pango
 sdesc: "Screensaver for X11"
 ldesc: "The xscreensaver program waits until the keyboard and mouse 
 have been idle for a period, and then runs a graphics demo chosen at 
