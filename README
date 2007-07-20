@@ -11,21 +11,21 @@ the many graphics demos that are launched by xscreensaver.
 Runtime requirements:
   cygwin-1.5.24-2
   crypt-1.1-1
-  gdk-pixbuf2-2.10.9-1
-  glib2-2.12.9-1
-  gtk2-x11-2.10.9-1
-  libGL1-6.5.1-1
-  libGLU1-6.5.1-1
+  gdk-pixbuf2-2.10.14-1
+  glib2-2.12.13-1
+  gtk2-x11-2.10.14-1
+  libGL1-6.5.3-1
+  libGLU1-6.5.3-1
   libX11_6-1.1.1-1
   libXext6-1.0.2-1
   libXmu6-1.0.3-1
   libXrandr2-1.1.2-1
   libXt6-1.0.4-1
-  libglade2-2.6.0-1
+  libglade2-2.6.1-1
   libintl8-0.15-1
   libjpeg62-6b-12
-  libxml2-2.6.27-1
-  pango-1.14.10-1
+  libxml2-2.6.28-2
+  pango-1.16.4-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -33,6 +33,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
+  cygport-0.3.5-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   make-3.81-1
@@ -46,15 +47,15 @@ Canonical homepage:
 -------------------------------------------
 
 Build instructions:
-  unpack xscreensaver-5.01-X-src.tar.bz2
+  unpack xscreensaver-5.03-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xscreensaver-5.01-X.cygport all
+  cygport ./xscreensaver-5.03-X.cygport all
 
 This will create:
-  /usr/src/xscreensaver-5.01-X-src.tar.bz2
-  /usr/src/xscreensaver-5.01-X.tar.bz2
+  /usr/src/xscreensaver-5.03-X-src.tar.bz2
+  /usr/src/xscreensaver-5.03-X.tar.bz2
 
 -------------------------------------------
 
@@ -108,6 +109,7 @@ Files included in the binary package:
   /usr/lib/xscreensaver/cube21.exe
   /usr/lib/xscreensaver/cubenetic.exe
   /usr/lib/xscreensaver/cubestorm.exe
+  /usr/lib/xscreensaver/cwaves.exe
   /usr/lib/xscreensaver/cynosure.exe
   /usr/lib/xscreensaver/dangerball.exe
   /usr/lib/xscreensaver/decayscreen.exe
@@ -122,6 +124,7 @@ Files included in the binary package:
   /usr/lib/xscreensaver/epicycle.exe
   /usr/lib/xscreensaver/eruption.exe
   /usr/lib/xscreensaver/euler2d.exe
+  /usr/lib/xscreensaver/extrusion.exe
   /usr/lib/xscreensaver/fadeplot.exe
   /usr/lib/xscreensaver/fiberlamp.exe
   /usr/lib/xscreensaver/fireworkx.exe
@@ -141,6 +144,7 @@ Files included in the binary package:
   /usr/lib/xscreensaver/gears.exe
   /usr/lib/xscreensaver/gflux.exe
   /usr/lib/xscreensaver/glblur.exe
+  /usr/lib/xscreensaver/glcells.exe
   /usr/lib/xscreensaver/gleidescope.exe
   /usr/lib/xscreensaver/glforestfire.exe
   /usr/lib/xscreensaver/glhanoi.exe
@@ -183,6 +187,7 @@ Files included in the binary package:
   /usr/lib/xscreensaver/ljlatest
   /usr/lib/xscreensaver/lmorph.exe
   /usr/lib/xscreensaver/loop.exe
+  /usr/lib/xscreensaver/m6502.exe
   /usr/lib/xscreensaver/maze.exe
   /usr/lib/xscreensaver/memscroller.exe
   /usr/lib/xscreensaver/menger.exe
@@ -258,6 +263,7 @@ Files included in the binary package:
   /usr/lib/xscreensaver/vermiculate.exe
   /usr/lib/xscreensaver/vidwhacker
   /usr/lib/xscreensaver/vines.exe
+  /usr/lib/xscreensaver/voronoi.exe
   /usr/lib/xscreensaver/wander.exe
   /usr/lib/xscreensaver/webcollage
   /usr/lib/xscreensaver/webcollage-helper.exe
@@ -275,9 +281,9 @@ Files included in the binary package:
   /usr/lib/xscreensaver/xsublim.exe
   /usr/lib/xscreensaver/zoom.exe
   /usr/share/applications/gnome-screensaver-properties.desktop
-  /usr/share/doc/Cygwin/xscreensaver-5.01.README
-  /usr/share/doc/xscreensaver-5.01/INSTALL
-  /usr/share/doc/xscreensaver-5.01/README
+  /usr/share/doc/Cygwin/xscreensaver-5.03.README
+  /usr/share/doc/xscreensaver-5.03/INSTALL
+  /usr/share/doc/xscreensaver-5.03/README
   /usr/share/locale/ca/LC_MESSAGES/xscreensaver.mo
   /usr/share/locale/da/LC_MESSAGES/xscreensaver.mo
   /usr/share/locale/de/LC_MESSAGES/xscreensaver.mo
@@ -348,6 +354,7 @@ Files included in the binary package:
   /usr/share/man/man6/cube21.6.gz
   /usr/share/man/man6/cubenetic.6.gz
   /usr/share/man/man6/cubestorm.6.gz
+  /usr/share/man/man6/cwaves.6.gz
   /usr/share/man/man6/cynosure.6.gz
   /usr/share/man/man6/dangerball.6.gz
   /usr/share/man/man6/decayscreen.6.gz
@@ -382,6 +389,7 @@ Files included in the binary package:
   /usr/share/man/man6/gears.6.gz
   /usr/share/man/man6/gflux.6.gz
   /usr/share/man/man6/glblur.6.gz
+  /usr/share/man/man6/glcells.6.gz
   /usr/share/man/man6/gleidescope.6.gz
   /usr/share/man/man6/glforestfire.6.gz
   /usr/share/man/man6/glhanoi.6.gz
@@ -498,6 +506,7 @@ Files included in the binary package:
   /usr/share/man/man6/vermiculate.6.gz
   /usr/share/man/man6/vidwhacker.6.gz
   /usr/share/man/man6/vines.6.gz
+  /usr/share/man/man6/voronoi.6.gz
   /usr/share/man/man6/wander.6.gz
   /usr/share/man/man6/webcollage.6.gz
   /usr/share/man/man6/whirlwindwarp.6.gz
@@ -556,6 +565,7 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/cube21.xml
   /usr/share/xscreensaver/config/cubenetic.xml
   /usr/share/xscreensaver/config/cubestorm.xml
+  /usr/share/xscreensaver/config/cwaves.xml
   /usr/share/xscreensaver/config/cynosure.xml
   /usr/share/xscreensaver/config/dangerball.xml
   /usr/share/xscreensaver/config/decayscreen.xml
@@ -592,6 +602,7 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/gears.xml
   /usr/share/xscreensaver/config/gflux.xml
   /usr/share/xscreensaver/config/glblur.xml
+  /usr/share/xscreensaver/config/glcells.xml
   /usr/share/xscreensaver/config/gleidescope.xml
   /usr/share/xscreensaver/config/glforestfire.xml
   /usr/share/xscreensaver/config/glhanoi.xml
@@ -634,6 +645,7 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/lissie.xml
   /usr/share/xscreensaver/config/lmorph.xml
   /usr/share/xscreensaver/config/loop.xml
+  /usr/share/xscreensaver/config/m6502.xml
   /usr/share/xscreensaver/config/maze.xml
   /usr/share/xscreensaver/config/memscroller.xml
   /usr/share/xscreensaver/config/menger.xml
@@ -710,6 +722,7 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/vermiculate.xml
   /usr/share/xscreensaver/config/vidwhacker.xml
   /usr/share/xscreensaver/config/vines.xml
+  /usr/share/xscreensaver/config/voronoi.xml
   /usr/share/xscreensaver/config/wander.xml
   /usr/share/xscreensaver/config/webcollage.xml
   /usr/share/xscreensaver/config/whirlwindwarp.xml
@@ -740,6 +753,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 5.03-1 -----
+Version bump.
 
 ----- version 5.01-1 -----
 Version bump, built with cygport for modular X11.
