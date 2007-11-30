@@ -14,18 +14,18 @@ Runtime requirements:
   gdk-pixbuf2-2.10.14-1
   glib2-2.12.13-1
   gtk2-x11-2.10.14-1
-  libGL1-6.5.3-1
-  libGLU1-6.5.3-1
-  libX11_6-1.1.1-1
-  libXext6-1.0.2-1
+  libGL1-7.0.1-1
+  libGLU1-7.0.1-1
+  libX11_6-1.1.3-1
+  libXext6-1.0.3-1
   libXmu6-1.0.3-1
-  libXrandr2-1.1.2-1
-  libXt6-1.0.4-1
+  libXrandr2-1.2.2-1
+  libXt6-1.0.5-1
   libglade2-2.6.1-1
   libintl8-0.15-1
   libjpeg62-6b-12
-  libxml2-2.6.28-2
-  pango-1.16.4-1
+  libxml2-2.6.30-1
+  pango-1.16.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -33,7 +33,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.5-1
+  cygport-0.3.7-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   make-3.81-1
@@ -47,15 +47,15 @@ Canonical homepage:
 -------------------------------------------
 
 Build instructions:
-  unpack xscreensaver-5.03-X-src.tar.bz2
+  unpack xscreensaver-5.04-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xscreensaver-5.03-X.cygport all
+  cygport ./xscreensaver-5.04-X.cygport all
 
 This will create:
-  /usr/src/xscreensaver-5.03-X-src.tar.bz2
-  /usr/src/xscreensaver-5.03-X.tar.bz2
+  /usr/src/xscreensaver-5.04-X-src.tar.bz2
+  /usr/src/xscreensaver-5.04-X.tar.bz2
 
 -------------------------------------------
 
@@ -281,9 +281,9 @@ Files included in the binary package:
   /usr/lib/xscreensaver/xsublim.exe
   /usr/lib/xscreensaver/zoom.exe
   /usr/share/applications/gnome-screensaver-properties.desktop
-  /usr/share/doc/Cygwin/xscreensaver-5.03.README
-  /usr/share/doc/xscreensaver-5.03/INSTALL
-  /usr/share/doc/xscreensaver-5.03/README
+  /usr/share/doc/Cygwin/xscreensaver-5.04.README
+  /usr/share/doc/xscreensaver-5.04/INSTALL
+  /usr/share/doc/xscreensaver-5.04/README
   /usr/share/locale/ca/LC_MESSAGES/xscreensaver.mo
   /usr/share/locale/da/LC_MESSAGES/xscreensaver.mo
   /usr/share/locale/de/LC_MESSAGES/xscreensaver.mo
@@ -753,6 +753,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 5.04-1 -----
+Version bump.
 
 ----- version 5.03-1 -----
 Version bump.
