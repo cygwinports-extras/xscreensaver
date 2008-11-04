@@ -1,0 +1,21 @@
+DESCRIPTION="X11 Screensaver framework and collection"
+HOMEPAGE="http://www.jwz.org/xscreensaver/"
+SRC_URI="http://www.jwz.org/xscreensaver/${P}.tar.gz"
+
+src_compile() {
+	# we can't use gnome2_autoreconf because automake is not used :-(
+	cd ${S}
+	intltoolize -c -f || error "intltoolize failed"
+	cygautoreconf
+	cd ${B}
+	cygconf \
+		--with-hackdir=/usr/lib/xscreensaver \
+		--with-x-app-defaults=/etc/X11/app-defaults \
+		ac_cv_func_sigaction=no
+	cygmake -j1 all
+}
+
+src_install() {
+	cd ${B}
+	cyginstall install_prefix=${D}
+}
