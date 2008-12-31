@@ -11,32 +11,33 @@ the many graphics demos that are launched by xscreensaver.
 Runtime requirements:
   cygwin-1.5.25-15
   crypt-1.1-1
-  gdk-pixbuf2-2.12.12-1
-  glib2-2.16.6-1
-  gtk2-x11-2.12.12-1
+  libgdk_pixbuf2.0_0-2.14.6-1
+  libgdk_pixbuf_xlib2.0_0-2.14.6-1
   libGL1-7.2-2
-  libglade2-2.6.3-1
-  libgle3-3.1.0-1
+  libglade2.0_0-2.6.3-2
+  libgle3-3.1.0-2
+  libglib2.0_0-2.18.3-1
   libGLU1-7.2-2
+  libgtk2.0_0-2.14.6-1
   libintl8-0.17-2
   libjpeg62-6b-12
+  libpango1.0_0-1.22.4-1
   libX11_6-1.1.5-1
   libXext6-1.0.4-1
-  libxml2-2.6.32-2
+  libxml2-2.7.2-1
   libXmu6-1.0.4-1
   libXrandr2-1.2.3-1
   libXt6-1.0.5-2
-  pango-1.20.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.4-1.4p6-3
-  binutils-20080523-2
-  cygport-0.4.2-1
+  autoconf2.5-2.63-1
+  automake1.4-1.4p6-5
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gettext-devel-0.17-1
+  gettext-devel-0.17-2
   intltool-0.40.5-1
   make-3.81-1
   perl-5.10.0-5
@@ -49,15 +50,15 @@ Canonical homepage:
 -------------------------------------------
 
 Build instructions:
-  unpack xscreensaver-5.07-X-src.tar.bz2
+  unpack xscreensaver-5.08-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xscreensaver-5.07-X.cygport all
+  cygport ./xscreensaver-5.08-X.cygport all
 
 This will create:
-  /usr/src/xscreensaver-5.07-X-src.tar.bz2
-  /usr/src/xscreensaver-5.07-X.tar.bz2
+  /usr/src/xscreensaver-5.08-X-src.tar.bz2
+  /usr/src/xscreensaver-5.08-X.tar.bz2
 
 -------------------------------------------
 
@@ -96,7 +97,6 @@ Files included in the binary package:
   /usr/lib/xscreensaver/braid.exe
   /usr/lib/xscreensaver/bsod.exe
   /usr/lib/xscreensaver/bubble3d.exe
-  /usr/lib/xscreensaver/bubbles.exe
   /usr/lib/xscreensaver/bumps.exe
   /usr/lib/xscreensaver/cage.exe
   /usr/lib/xscreensaver/carousel.exe
@@ -107,7 +107,6 @@ Files included in the binary package:
   /usr/lib/xscreensaver/compass.exe
   /usr/lib/xscreensaver/coral.exe
   /usr/lib/xscreensaver/crackberg.exe
-  /usr/lib/xscreensaver/critical.exe
   /usr/lib/xscreensaver/crystal.exe
   /usr/lib/xscreensaver/cube21.exe
   /usr/lib/xscreensaver/cubenetic.exe
@@ -132,7 +131,6 @@ Files included in the binary package:
   /usr/lib/xscreensaver/fadeplot.exe
   /usr/lib/xscreensaver/fiberlamp.exe
   /usr/lib/xscreensaver/fireworkx.exe
-  /usr/lib/xscreensaver/flag.exe
   /usr/lib/xscreensaver/flame.exe
   /usr/lib/xscreensaver/flipflop.exe
   /usr/lib/xscreensaver/flipscreen3d.exe
@@ -142,7 +140,6 @@ Files included in the binary package:
   /usr/lib/xscreensaver/flurry.exe
   /usr/lib/xscreensaver/flyingtoasters.exe
   /usr/lib/xscreensaver/fontglide.exe
-  /usr/lib/xscreensaver/forest.exe
   /usr/lib/xscreensaver/fuzzyflakes.exe
   /usr/lib/xscreensaver/galaxy.exe
   /usr/lib/xscreensaver/gears.exe
@@ -150,7 +147,6 @@ Files included in the binary package:
   /usr/lib/xscreensaver/glblur.exe
   /usr/lib/xscreensaver/glcells.exe
   /usr/lib/xscreensaver/gleidescope.exe
-  /usr/lib/xscreensaver/glforestfire.exe
   /usr/lib/xscreensaver/glhanoi.exe
   /usr/lib/xscreensaver/glknots.exe
   /usr/lib/xscreensaver/glmatrix.exe
@@ -184,14 +180,9 @@ Files included in the binary package:
   /usr/lib/xscreensaver/klein.exe
   /usr/lib/xscreensaver/kumppa.exe
   /usr/lib/xscreensaver/lament.exe
-  /usr/lib/xscreensaver/laser.exe
   /usr/lib/xscreensaver/lavalite.exe
   /usr/lib/xscreensaver/lcdscrub.exe
-  /usr/lib/xscreensaver/lightning.exe
-  /usr/lib/xscreensaver/lisa.exe
-  /usr/lib/xscreensaver/lissie.exe
   /usr/lib/xscreensaver/ljlatest
-  /usr/lib/xscreensaver/lmorph.exe
   /usr/lib/xscreensaver/lockward.exe
   /usr/lib/xscreensaver/loop.exe
   /usr/lib/xscreensaver/m6502.exe
@@ -200,7 +191,6 @@ Files included in the binary package:
   /usr/lib/xscreensaver/menger.exe
   /usr/lib/xscreensaver/metaballs.exe
   /usr/lib/xscreensaver/mirrorblob.exe
-  /usr/lib/xscreensaver/mismunch.exe
   /usr/lib/xscreensaver/moebius.exe
   /usr/lib/xscreensaver/moebiusgears.exe
   /usr/lib/xscreensaver/moire.exe
@@ -218,6 +208,7 @@ Files included in the binary package:
   /usr/lib/xscreensaver/penrose.exe
   /usr/lib/xscreensaver/petri.exe
   /usr/lib/xscreensaver/phosphor.exe
+  /usr/lib/xscreensaver/photopile.exe
   /usr/lib/xscreensaver/piecewise.exe
   /usr/lib/xscreensaver/pinion.exe
   /usr/lib/xscreensaver/pipes.exe
@@ -235,7 +226,6 @@ Files included in the binary package:
   /usr/lib/xscreensaver/ripples.exe
   /usr/lib/xscreensaver/rocks.exe
   /usr/lib/xscreensaver/rorschach.exe
-  /usr/lib/xscreensaver/rotor.exe
   /usr/lib/xscreensaver/rotzoomer.exe
   /usr/lib/xscreensaver/rubik.exe
   /usr/lib/xscreensaver/sballs.exe
@@ -247,9 +237,7 @@ Files included in the binary package:
   /usr/lib/xscreensaver/slip.exe
   /usr/lib/xscreensaver/sonar.exe
   /usr/lib/xscreensaver/speedmine.exe
-  /usr/lib/xscreensaver/sphere.exe
   /usr/lib/xscreensaver/spheremonics.exe
-  /usr/lib/xscreensaver/spiral.exe
   /usr/lib/xscreensaver/spotlight.exe
   /usr/lib/xscreensaver/sproingies.exe
   /usr/lib/xscreensaver/squiral.exe
@@ -261,7 +249,6 @@ Files included in the binary package:
   /usr/lib/xscreensaver/substrate.exe
   /usr/lib/xscreensaver/superquadrics.exe
   /usr/lib/xscreensaver/swirl.exe
-  /usr/lib/xscreensaver/t3d.exe
   /usr/lib/xscreensaver/tangram.exe
   /usr/lib/xscreensaver/thornbird.exe
   /usr/lib/xscreensaver/timetunnel.exe
@@ -271,14 +258,11 @@ Files included in the binary package:
   /usr/lib/xscreensaver/twang.exe
   /usr/lib/xscreensaver/vermiculate.exe
   /usr/lib/xscreensaver/vidwhacker
-  /usr/lib/xscreensaver/vines.exe
   /usr/lib/xscreensaver/voronoi.exe
   /usr/lib/xscreensaver/wander.exe
   /usr/lib/xscreensaver/webcollage
   /usr/lib/xscreensaver/webcollage-helper.exe
   /usr/lib/xscreensaver/whirlwindwarp.exe
-  /usr/lib/xscreensaver/whirlygig.exe
-  /usr/lib/xscreensaver/worm.exe
   /usr/lib/xscreensaver/wormhole.exe
   /usr/lib/xscreensaver/xanalogtv.exe
   /usr/lib/xscreensaver/xflame.exe
@@ -289,8 +273,8 @@ Files included in the binary package:
   /usr/lib/xscreensaver/xspirograph.exe
   /usr/lib/xscreensaver/zoom.exe
   /usr/share/applications/xscreensaver-properties.desktop
-  /usr/share/doc/xscreensaver-5.07/INSTALL
-  /usr/share/doc/xscreensaver-5.07/README
+  /usr/share/doc/xscreensaver-5.08/INSTALL
+  /usr/share/doc/xscreensaver-5.08/README
   /usr/share/man/man1/xscreensaver-command.1.gz
   /usr/share/man/man1/xscreensaver-demo.1.gz
   /usr/share/man/man1/xscreensaver-getimage-file.1.gz
@@ -322,7 +306,6 @@ Files included in the binary package:
   /usr/share/man/man6/braid.6.gz
   /usr/share/man/man6/bsod.6.gz
   /usr/share/man/man6/bubble3d.6.gz
-  /usr/share/man/man6/bubbles.6.gz
   /usr/share/man/man6/bumps.6.gz
   /usr/share/man/man6/cage.6.gz
   /usr/share/man/man6/carousel.6.gz
@@ -333,7 +316,6 @@ Files included in the binary package:
   /usr/share/man/man6/compass.6.gz
   /usr/share/man/man6/coral.6.gz
   /usr/share/man/man6/crackberg.6.gz
-  /usr/share/man/man6/critical.6.gz
   /usr/share/man/man6/crystal.6.gz
   /usr/share/man/man6/cube21.6.gz
   /usr/share/man/man6/cubenetic.6.gz
@@ -358,7 +340,6 @@ Files included in the binary package:
   /usr/share/man/man6/fadeplot.6.gz
   /usr/share/man/man6/fiberlamp.6.gz
   /usr/share/man/man6/fireworkx.6.gz
-  /usr/share/man/man6/flag.6.gz
   /usr/share/man/man6/flame.6.gz
   /usr/share/man/man6/flipflop.6.gz
   /usr/share/man/man6/flipscreen3d.6.gz
@@ -368,7 +349,6 @@ Files included in the binary package:
   /usr/share/man/man6/flurry.6.gz
   /usr/share/man/man6/flyingtoasters.6.gz
   /usr/share/man/man6/fontglide.6.gz
-  /usr/share/man/man6/forest.6.gz
   /usr/share/man/man6/fuzzyflakes.6.gz
   /usr/share/man/man6/galaxy.6.gz
   /usr/share/man/man6/gears.6.gz
@@ -376,7 +356,6 @@ Files included in the binary package:
   /usr/share/man/man6/glblur.6.gz
   /usr/share/man/man6/glcells.6.gz
   /usr/share/man/man6/gleidescope.6.gz
-  /usr/share/man/man6/glforestfire.6.gz
   /usr/share/man/man6/glhanoi.6.gz
   /usr/share/man/man6/glknots.6.gz
   /usr/share/man/man6/glmatrix.6.gz
@@ -410,14 +389,9 @@ Files included in the binary package:
   /usr/share/man/man6/klein.6.gz
   /usr/share/man/man6/kumppa.6.gz
   /usr/share/man/man6/lament.6.gz
-  /usr/share/man/man6/laser.6.gz
   /usr/share/man/man6/lavalite.6.gz
   /usr/share/man/man6/lcdscrub.6.gz
-  /usr/share/man/man6/lightning.6.gz
-  /usr/share/man/man6/lisa.6.gz
-  /usr/share/man/man6/lissie.6.gz
   /usr/share/man/man6/ljlatest.6.gz
-  /usr/share/man/man6/lmorph.6.gz
   /usr/share/man/man6/lockward.6.gz
   /usr/share/man/man6/loop.6.gz
   /usr/share/man/man6/maze.6.gz
@@ -425,7 +399,6 @@ Files included in the binary package:
   /usr/share/man/man6/menger.6.gz
   /usr/share/man/man6/metaballs.6.gz
   /usr/share/man/man6/mirrorblob.6.gz
-  /usr/share/man/man6/mismunch.6.gz
   /usr/share/man/man6/moebius.6.gz
   /usr/share/man/man6/moebiusgears.6.gz
   /usr/share/man/man6/moire.6.gz
@@ -443,6 +416,7 @@ Files included in the binary package:
   /usr/share/man/man6/penrose.6.gz
   /usr/share/man/man6/petri.6.gz
   /usr/share/man/man6/phosphor.6.gz
+  /usr/share/man/man6/photopile.6.gz
   /usr/share/man/man6/piecewise.6.gz
   /usr/share/man/man6/pinion.6.gz
   /usr/share/man/man6/pipes.6.gz
@@ -459,7 +433,6 @@ Files included in the binary package:
   /usr/share/man/man6/ripples.6.gz
   /usr/share/man/man6/rocks.6.gz
   /usr/share/man/man6/rorschach.6.gz
-  /usr/share/man/man6/rotor.6.gz
   /usr/share/man/man6/rotzoomer.6.gz
   /usr/share/man/man6/rubik.6.gz
   /usr/share/man/man6/sballs.6.gz
@@ -471,9 +444,7 @@ Files included in the binary package:
   /usr/share/man/man6/slip.6.gz
   /usr/share/man/man6/sonar.6.gz
   /usr/share/man/man6/speedmine.6.gz
-  /usr/share/man/man6/sphere.6.gz
   /usr/share/man/man6/spheremonics.6.gz
-  /usr/share/man/man6/spiral.6.gz
   /usr/share/man/man6/spotlight.6.gz
   /usr/share/man/man6/sproingies.6.gz
   /usr/share/man/man6/squiral.6.gz
@@ -485,7 +456,6 @@ Files included in the binary package:
   /usr/share/man/man6/substrate.6.gz
   /usr/share/man/man6/superquadrics.6.gz
   /usr/share/man/man6/swirl.6.gz
-  /usr/share/man/man6/t3d.6.gz
   /usr/share/man/man6/tangram.6.gz
   /usr/share/man/man6/thornbird.6.gz
   /usr/share/man/man6/timetunnel.6.gz
@@ -495,13 +465,10 @@ Files included in the binary package:
   /usr/share/man/man6/twang.6.gz
   /usr/share/man/man6/vermiculate.6.gz
   /usr/share/man/man6/vidwhacker.6.gz
-  /usr/share/man/man6/vines.6.gz
   /usr/share/man/man6/voronoi.6.gz
   /usr/share/man/man6/wander.6.gz
   /usr/share/man/man6/webcollage.6.gz
   /usr/share/man/man6/whirlwindwarp.6.gz
-  /usr/share/man/man6/whirlygig.6.gz
-  /usr/share/man/man6/worm.6.gz
   /usr/share/man/man6/wormhole.6.gz
   /usr/share/man/man6/xanalogtv.6.gz
   /usr/share/man/man6/xflame.6.gz
@@ -511,7 +478,6 @@ Files included in the binary package:
   /usr/share/man/man6/xrayswarm.6.gz
   /usr/share/man/man6/xscreensaver-gl-helper.6.gz
   /usr/share/man/man6/xspirograph.6.gz
-  /usr/share/man/man6/xsublim.6.gz
   /usr/share/man/man6/zoom.6.gz
   /usr/share/pixmaps/xscreensaver.xpm
   /usr/share/xscreensaver/config/README
@@ -539,7 +505,6 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/braid.xml
   /usr/share/xscreensaver/config/bsod.xml
   /usr/share/xscreensaver/config/bubble3d.xml
-  /usr/share/xscreensaver/config/bubbles.xml
   /usr/share/xscreensaver/config/bumps.xml
   /usr/share/xscreensaver/config/cage.xml
   /usr/share/xscreensaver/config/carousel.xml
@@ -550,7 +515,6 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/compass.xml
   /usr/share/xscreensaver/config/coral.xml
   /usr/share/xscreensaver/config/crackberg.xml
-  /usr/share/xscreensaver/config/critical.xml
   /usr/share/xscreensaver/config/crystal.xml
   /usr/share/xscreensaver/config/cube21.xml
   /usr/share/xscreensaver/config/cubenetic.xml
@@ -575,7 +539,6 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/fadeplot.xml
   /usr/share/xscreensaver/config/fiberlamp.xml
   /usr/share/xscreensaver/config/fireworkx.xml
-  /usr/share/xscreensaver/config/flag.xml
   /usr/share/xscreensaver/config/flame.xml
   /usr/share/xscreensaver/config/flipflop.xml
   /usr/share/xscreensaver/config/flipscreen3d.xml
@@ -585,7 +548,6 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/flurry.xml
   /usr/share/xscreensaver/config/flyingtoasters.xml
   /usr/share/xscreensaver/config/fontglide.xml
-  /usr/share/xscreensaver/config/forest.xml
   /usr/share/xscreensaver/config/fuzzyflakes.xml
   /usr/share/xscreensaver/config/galaxy.xml
   /usr/share/xscreensaver/config/gears.xml
@@ -593,7 +555,6 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/glblur.xml
   /usr/share/xscreensaver/config/glcells.xml
   /usr/share/xscreensaver/config/gleidescope.xml
-  /usr/share/xscreensaver/config/glforestfire.xml
   /usr/share/xscreensaver/config/glhanoi.xml
   /usr/share/xscreensaver/config/glknots.xml
   /usr/share/xscreensaver/config/glmatrix.xml
@@ -627,13 +588,8 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/klein.xml
   /usr/share/xscreensaver/config/kumppa.xml
   /usr/share/xscreensaver/config/lament.xml
-  /usr/share/xscreensaver/config/laser.xml
   /usr/share/xscreensaver/config/lavalite.xml
   /usr/share/xscreensaver/config/lcdscrub.xml
-  /usr/share/xscreensaver/config/lightning.xml
-  /usr/share/xscreensaver/config/lisa.xml
-  /usr/share/xscreensaver/config/lissie.xml
-  /usr/share/xscreensaver/config/lmorph.xml
   /usr/share/xscreensaver/config/lockward.xml
   /usr/share/xscreensaver/config/loop.xml
   /usr/share/xscreensaver/config/m6502.xml
@@ -642,7 +598,6 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/menger.xml
   /usr/share/xscreensaver/config/metaballs.xml
   /usr/share/xscreensaver/config/mirrorblob.xml
-  /usr/share/xscreensaver/config/mismunch.xml
   /usr/share/xscreensaver/config/moebius.xml
   /usr/share/xscreensaver/config/moebiusgears.xml
   /usr/share/xscreensaver/config/moire.xml
@@ -660,6 +615,7 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/penrose.xml
   /usr/share/xscreensaver/config/petri.xml
   /usr/share/xscreensaver/config/phosphor.xml
+  /usr/share/xscreensaver/config/photopile.xml
   /usr/share/xscreensaver/config/piecewise.xml
   /usr/share/xscreensaver/config/pinion.xml
   /usr/share/xscreensaver/config/pipes.xml
@@ -677,7 +633,6 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/ripples.xml
   /usr/share/xscreensaver/config/rocks.xml
   /usr/share/xscreensaver/config/rorschach.xml
-  /usr/share/xscreensaver/config/rotor.xml
   /usr/share/xscreensaver/config/rotzoomer.xml
   /usr/share/xscreensaver/config/rubik.xml
   /usr/share/xscreensaver/config/sballs.xml
@@ -689,9 +644,7 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/slip.xml
   /usr/share/xscreensaver/config/sonar.xml
   /usr/share/xscreensaver/config/speedmine.xml
-  /usr/share/xscreensaver/config/sphere.xml
   /usr/share/xscreensaver/config/spheremonics.xml
-  /usr/share/xscreensaver/config/spiral.xml
   /usr/share/xscreensaver/config/spotlight.xml
   /usr/share/xscreensaver/config/sproingies.xml
   /usr/share/xscreensaver/config/squiral.xml
@@ -703,7 +656,6 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/substrate.xml
   /usr/share/xscreensaver/config/superquadrics.xml
   /usr/share/xscreensaver/config/swirl.xml
-  /usr/share/xscreensaver/config/t3d.xml
   /usr/share/xscreensaver/config/tangram.xml
   /usr/share/xscreensaver/config/thornbird.xml
   /usr/share/xscreensaver/config/timetunnel.xml
@@ -713,13 +665,10 @@ Files included in the binary package:
   /usr/share/xscreensaver/config/twang.xml
   /usr/share/xscreensaver/config/vermiculate.xml
   /usr/share/xscreensaver/config/vidwhacker.xml
-  /usr/share/xscreensaver/config/vines.xml
   /usr/share/xscreensaver/config/voronoi.xml
   /usr/share/xscreensaver/config/wander.xml
   /usr/share/xscreensaver/config/webcollage.xml
   /usr/share/xscreensaver/config/whirlwindwarp.xml
-  /usr/share/xscreensaver/config/whirlygig.xml
-  /usr/share/xscreensaver/config/worm.xml
   /usr/share/xscreensaver/config/wormhole.xml
   /usr/share/xscreensaver/config/xanalogtv.xml
   /usr/share/xscreensaver/config/xflame.xml
@@ -740,6 +689,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 5.08-1 -----
+Version bump.
 
 ----- version 5.07-1 -----
 Version bump.

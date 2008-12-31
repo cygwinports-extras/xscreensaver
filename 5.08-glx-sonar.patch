@@ -1,0 +1,11 @@
+--- origsrc/xscreensaver-5.08/hacks/glx/sonar-icmp.c	2008-08-15 20:15:53.000000000 -0500
++++ src/xscreensaver-5.08/hacks/glx/sonar-icmp.c	2008-12-30 13:58:28.768750000 -0600
+@@ -60,7 +60,7 @@
+ #ifndef HAVE_PING
+ 
+ sonar_sensor_data *
+-init_ping (Display *dpy, const char *subnet, int timeout, 
++init_ping (Display *dpy, char **error_ret, const char *subnet, int timeout, 
+            Bool resolve_p, Bool times_p, Bool debug_p)
+ {
+   if (! (!subnet || !*subnet || !strcmp(subnet, "default")))
