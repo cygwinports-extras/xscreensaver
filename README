@@ -11,20 +11,21 @@ the many graphics demos that are launched by xscreensaver.
 Runtime requirements:
   cygwin-1.5.25-15
   crypt-1.1-1
-  libgdk_pixbuf2.0_0-2.14.6-1
-  libgdk_pixbuf_xlib2.0_0-2.14.6-1
+  libgdk_pixbuf2.0_0-2.14.7-2
+  libgdk_pixbuf_xlib2.0_0-2.14.7-2
   libGL1-7.2-2
   libglade2.0_0-2.6.3-2
   libgle3-3.1.0-2
-  libglib2.0_0-2.18.3-1
+  libglib2.0_0-2.18.4-1
   libGLU1-7.2-2
-  libgtk2.0_0-2.14.6-1
+  libgtk2.0_0-2.14.7-2
   libintl8-0.17-2
   libjpeg62-6b-12
   libpango1.0_0-1.22.4-1
-  libX11_6-1.1.5-1
+  libX11_6-1.1.5-2
   libXext6-1.0.4-1
-  libxml2-2.7.2-1
+  libXinerama1-1.0.3-1
+  libxml2-2.7.3-1
   libXmu6-1.0.4-1
   libXrandr2-1.2.3-1
   libXt6-1.0.5-2
@@ -689,6 +690,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 5.08-2 -----
+Enabled Xinerama support.
 
 ----- version 5.08-1 -----
 Version bump.
