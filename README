@@ -9,40 +9,43 @@ demand.) xscreensaver consists of two parts: xscreensaver itself (the
 the many graphics demos that are launched by xscreensaver.
 
 Runtime requirements:
-  cygwin-1.5.25-15
+  cygwin-1.7.0-45
   crypt-1.1-1
-  libgdk_pixbuf2.0_0-2.14.7-2
-  libgdk_pixbuf_xlib2.0_0-2.14.7-2
-  libGL1-7.2-2
-  libglade2.0_0-2.6.3-2
-  libgle3-3.1.0-2
-  libglib2.0_0-2.18.4-1
-  libGLU1-7.2-2
-  libgtk2.0_0-2.14.7-2
-  libintl8-0.17-2
-  libjpeg62-6b-12
-  libpango1.0_0-1.22.4-1
-  libX11_6-1.1.5-2
-  libXext6-1.0.4-1
-  libXinerama1-1.0.3-1
-  libxml2-2.7.3-1
-  libXmu6-1.0.4-1
-  libXrandr2-1.2.3-1
-  libXt6-1.0.5-2
+  libgdk_pixbuf2.0_0-2.16.1-1
+  libgdk_pixbuf_xlib2.0_0-2.16.1-1
+  libGL1-7.2-10
+  libglade2.0_0-2.6.4-1
+  libgle3-3.1.0-10
+  libglib2.0_0-2.20.1-1
+  libGLU1-7.2-10
+  libgtk2.0_0-2.16.1-1
+  libintl8-0.17-10
+  libjpeg62-6b-20
+  libpango1.0_0-1.24.1-1
+  libX11_6-1.2-10
+  libXext6-1.0.5-1
+  libXinerama1-1.0.3-10
+  libxml2-2.7.3-10
+  libXmu6-1.0.4-10
+  libXrandr2-1.3.0-10
+  libXt6-1.0.5-10
+  netpbm
+  perl
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.4-1.4p6-5
+  autoconf2.5-2.63-10
+  automake1.4-1.4p6-10
+  bc-1.06-2
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gettext-devel-0.17-2
-  intltool-0.40.5-1
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gettext-devel-0.17-10
+  intltool-0.40.6-1
+  make-3.81-2
   perl-5.10.0-5
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical homepage:
